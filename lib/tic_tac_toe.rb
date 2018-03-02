@@ -128,3 +128,14 @@ end
 ##    puts "Congratulations O!"
 ##  end
 ## end
+
+def play(board)
+  while !over(board)
+    turn(board)
+  end
+  if winner(board) == "X"
+    puts "Congratulations X!"
+  elsif winner(board) == "O"
+    puts "Congratulations O!"
+  end
+end
