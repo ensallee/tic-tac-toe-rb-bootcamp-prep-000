@@ -130,7 +130,7 @@ end
 ## end
 
 def play(board)
-  while !over(board)
+  while !over?(board)
     turn(board)
   end
   if winner(board) == "X"
